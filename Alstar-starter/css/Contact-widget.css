@@ -1,0 +1,119 @@
+.Contact-widget {
+    width: 100%;
+    position: relative;
+    background-color: #000;
+}
+    
+    .bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        overflow: hidden;
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%);
+        opacity: 0.2;
+    }
+    
+    .bg-video__content {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    
+    .Contact-widget-row > * {
+        z-index: 9999;
+    }
+    
+        .Contact-widget-row {
+            display: grid;
+            grid-template-rows: repeat(2,auto);
+            grid-template-columns: repeat(5,-webkit-max-content);
+            grid-template-columns: repeat(5,max-content);
+            grid-gap: 5rem;
+    
+            justify-content: center;
+            align-content: center;
+            color: #fff;
+        }
+    
+            .col-2-of-2 {
+                grid-column: 2 / 2;
+            }
+    
+            .col-3-of-4 {
+                grid-column: 3 / 4;
+            }
+    
+            .col-4-of-5 {
+                grid-column: 4 / 5;
+            }
+    
+            .icon__Address {
+                font-size: 5rem;
+                color: #00c1c1;
+            }
+    
+            .heading-tertiary {
+                font-size: 2rem;
+                padding: 2rem 0;
+                color: #fff;
+            }
+    
+            .Contact__icon--box {
+                grid-row: 2 / 3;
+                grid-column: 3 / 4;
+            }
+
+                .Contact__social-media {
+                    margin-right: 3.8rem;
+                }
+    
+                    .Contact__social-media li{
+                        width: 100%;
+                        display: inline-block;
+                        list-style: none;
+                        background-color: #00c1c1;
+                        font-size: 3rem;
+                        width: 55px;
+                        height: 55px;
+                        border-radius: 50%;
+                        text-align: justify;
+                        line-height: 55px;
+                        cursor: pointer;
+                        text-align: center;
+                        transition: all .5s;
+                        margin: 0 1rem;
+                    }
+        
+                        .social-media-icon {
+                            color: #fff;
+                        }
+        
+                        .Contact__social-media li:nth-child(1):hover {
+                            background-color: rgb(59, 89, 152);
+                        }
+        
+                        .Contact__social-media li:nth-child(2):hover {
+                            background-image: linear-gradient(to left bottom, rgb(81, 91, 212) ,rgb(129, 52, 175),rgb(221, 42, 123),rgb(254, 218, 119),rgb(245, 133, 41));
+                        }
+        
+                        .Contact__social-media li:nth-child(3):hover {
+                            background-color: rgb(8, 160, 233);
+                        }
+        
+                        .Contact__social-media li:nth-child(4):hover {
+                            background-color: rgb(230, 33, 23);
+                        }
+/* 900px tablet-portrail = 900px/16px = 56.25em */
+@media only screen and (max-width:56.25em) {
+    .Contact-widget-row {
+        display: block;
+    }
+    .Contact__Address {
+        margin-bottom: 3.5rem;
+    }
+}

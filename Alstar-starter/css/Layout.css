@@ -1,0 +1,92 @@
+.container {
+    max-width: 100%;
+    display: grid;
+    grid-template-rows:  80vh  repeat(8, -webkit-min-content);
+    grid-template-rows:  80vh  repeat(8, min-content);
+    grid-template-columns: [sidebar-start] 15vw [sidebar-end full-start] minmax(6rem, 1fr) [center-start]
+                            repeat(8, [col-start] minmax(-webkit-min-content,14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end] ;
+    grid-template-columns: [sidebar-start] 15vw [sidebar-end full-start] minmax(6rem, 1fr) [center-start]
+                            repeat(8, [col-start] minmax(-webkit-min-content,14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end] ;
+    grid-template-columns: [sidebar-start] 15vw [sidebar-end full-start] minmax(6rem, 1fr) [center-start]
+                            repeat(8, [col-start] minmax(min-content,14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end] ;
+}
+
+header {
+    grid-column: full-start / full-end;
+}
+
+.navigation-sidebar {
+    grid-row: 1 / -1;
+    grid-column: sidebar-start / sidebar-end;
+}
+
+.About {
+    grid-column: center-start / center-end;
+}
+
+.Details-bg {
+    grid-column: full-start / full-end;
+}
+
+.Services {
+    grid-column:  center-start / center-end;
+}
+
+.Works {
+    grid-column: center-start / center-end;
+}
+
+.Logo-bg {
+    grid-column: full-start / full-end;
+}
+
+.Our-Team {
+    grid-column: center-start / center-end;
+}
+
+.Contact-Us {
+    grid-column: center-start / center-end;
+    width: 100%;
+}
+
+.Contact-widget {
+    grid-column: full-start / full-end;
+}
+
+footer {
+    grid-column: sidebar-start / full-end;
+}
+
+/* 600px Phone = 600px/16px = 37.5em */
+@media only screen and (max-width:37.5em) {
+    .Contact-Us {
+        grid-column: full-start / full-end;
+        width: 100%;
+    }
+} 
+
+/* 900px tablet-portrail = 900px/16px = 56.25em */
+@media only screen and (max-width:56.25em) {
+    .container {
+        max-width: 100%;
+        display: grid;
+        grid-template-rows:-webkit-min-content  repeat(8, -webkit-min-content);
+        grid-template-rows:min-content  repeat(8, min-content);
+        grid-template-columns:  [full-start] minmax(6rem, 1fr) [center-start]
+                                repeat(8, [col-start] minmax(-webkit-min-content,14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end] ;
+        grid-template-columns:  [full-start] minmax(6rem, 1fr) [center-start]
+                                repeat(8, [col-start] minmax(-webkit-min-content,14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end] ;
+        grid-template-columns:  [full-start] minmax(6rem, 1fr) [center-start]
+                                repeat(8, [col-start] minmax(min-content,14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end] ;
+    }
+
+        .navigation-sidebar {
+            grid-row: 1 / -1;
+            grid-column: full-start / full-end;
+        }
+
+        footer {
+            grid-column: full-start / full-end;
+        }
+}
+

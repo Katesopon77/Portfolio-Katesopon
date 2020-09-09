@@ -1,0 +1,8 @@
+.Services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+}
+
+.Services__images {
+    max-width: 100%;
+}

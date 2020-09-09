@@ -1,0 +1,112 @@
+.navigation-sidebar{
+    background-color: #111;
+    position: relative;
+}
+
+    .navigation__nav {
+        width: 100%;
+        height: 100%;
+        margin-top: 5rem;
+    }
+
+    .navigation__nav .navigation__list {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .navigation__list {
+        font-size: 2rem;
+        position: fixed;
+        margin-left: 2rem;
+        transition: all .3s;
+    }
+
+    .navigation__list i {
+        padding-right: 5rem;
+        font-size: 3rem;
+    }
+
+        .navigation__item {
+            padding: 2rem 0;
+        }
+
+        .navigation__item .navigation__link:hover,
+        .navigation__item .navigation__link:active {
+            color: aqua;
+        }
+
+        .navigation__item:hover,
+        .navigation__item .navigation__link:active {
+            transform: scale(1.30);
+        }
+
+        .navigation__link:link,
+        .navigation__link:visited {
+            color: #fff;
+            text-transform: uppercase;
+            font-family: inherit;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .icon-menubar {
+            position: absolute;
+            top: 0;
+            font-size: 1rem;
+            color: #fff;
+            transform: translate(2rem, 3rem);
+            cursor: pointer;
+            visibility: hidden;
+        }
+/* 1800px Big Desktop = 1800px/16px = 112.5em */
+@media only screen and (max-width:112.5em) {
+    .navigation__list {
+        font-size: 1.3rem;
+        margin-left: 0rem;
+        position: relative;
+    }
+
+        .navigation__list i {
+            padding-right: 3rem;
+            font-size: 1.8rem;
+        }
+
+            .navigation__item {
+                padding: 1.3rem 0;
+            }
+}
+
+/* 1200px tablet-landscape = 1200px/16px = 75em*/
+@media only screen and (max-width:75em) {
+
+    .navigation__list {
+        font-size: 1.8rem;
+        justify-content: space-between;
+    }
+
+        .navigation__list i {
+            font-size: 2.3rem;
+            padding-bottom: 1.5rem;
+            padding-left: 2.5rem;
+        }
+
+            .navigation__item {
+                padding: 3rem 0;
+                margin-right: 3rem;
+                text-align: center;
+            }
+}
+
+/* 900px tablet-portrail = 900px/16px = 56.25em */
+@media only screen and (max-width:56.25em) {
+    .navigation__list i {
+        padding-left: 0rem;
+    }
+
+    .icon-menubar {
+        font-size: 3em;
+        visibility: visible;
+        position: absolute;
+        margin-top: -2rem;
+    }
+}

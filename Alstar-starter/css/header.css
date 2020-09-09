@@ -1,0 +1,92 @@
+header {
+    background-image: url(../img/intro/1.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header__logo {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+    .header__logo a {
+        color: #00c1c1;
+        font-size: 7rem;
+        margin-top: 3rem;
+        text-decoration: none;
+    }
+
+    .heading__primary {
+        margin-top: 15rem;
+    }
+
+    .heading__primary--main {
+        font-size: 4.8rem;
+        font-weight: 700;
+        color: white;    
+        text-align: center;
+
+        -webkit-animation-name: SlideInDown;
+                animation-name: SlideInDown;
+        -moz-animation-name: SlideInDown;
+        -webkit-animation-duration: .9s;
+                animation-duration: .9s;
+        -moz-animation-duration: .9s;
+        transition: all .3s; 
+    }
+
+        .heading__primary--sub {
+            font-size: 2rem;
+            color: #fff;
+            text-align: center;
+            margin-top: 3rem;
+
+            -webkit-animation-name: SlideInUp;
+                    animation-name: SlideInUp;
+            -moz-animation-name: SlideInUp;
+
+            -webkit-animation-duration: 2s;
+                    animation-duration: 2s;
+            -webkit-animation-timing-function: ease;
+                    animation-timing-function: ease;
+            transition: all .5s; 
+        }
+/* 1800px Big Desktop = 1800px/16px = 112.5em */
+@media only screen and (max-width:112.5em) {
+    .header__logo a {
+        font-size: 5.5rem;
+    }
+
+    .heading__primary--main {
+        font-size: 3.5rem;
+    }
+
+    .heading__primary--sub {
+        font-size: 1.5rem;
+    }
+}
+
+/* 1200px tablet-landscape = 1200px/16px = 75em*/
+@media only screen and (max-width:75em) {
+    .heading__primary {
+        margin-top: 25rem;
+    }
+}
+
+/* 900px tablet-portrail = 900px/16px = 56.25em */
+@media only screen and (max-width:56.25em) {
+    .heading__primary {
+        margin-top: 26rem;
+    }
+}
+
+/* 600px Phone = 600px/16px = 37.5em */
+@media only screen and (max-width:37.5em) {
+    .heading__primary {
+        margin-bottom: 15rem;
+    }
+}
+

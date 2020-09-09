@@ -1,0 +1,73 @@
+.Logo-bg {
+    background-image: url(../img/parallax/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    -webkit-filter: brightness(150%);
+            filter: brightness(150%);
+
+    max-width: 100%;
+    height: 39vh;
+    display: grid;
+    justify-content: center;
+}
+
+    .Logo-box {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
+        grid-template-columns: repeat(4, minmax(min-content, 1fr));
+    }
+
+        .Logo-fadeIn--1 {
+            -webkit-animation: fadeIn .2s 1s;
+                    animation: fadeIn .2s 1s;
+            transition: all .3s;
+            -webkit-animation-fill-mode: backwards;
+                    animation-fill-mode: backwards;
+        }
+
+        .Logo-fadeIn--2 {
+            -webkit-animation: fadeIn .2s 1.5s;
+                    animation: fadeIn .2s 1.5s;
+            transition: all .3s;
+            -webkit-animation-fill-mode: backwards;
+                    animation-fill-mode: backwards;
+        }
+
+        .Logo-fadeIn--3 {
+            -webkit-animation: fadeIn .2s 2s;
+                    animation: fadeIn .2s 2s;
+            transition: all .3s;
+            -webkit-animation-fill-mode: backwards;
+                    animation-fill-mode: backwards;
+        }
+
+        .Logo-fadeIn--4 {
+            -webkit-animation: fadeIn .2s 2.5s;
+                    animation: fadeIn .2s 2.5s;
+            transition: all .3s;
+            -webkit-animation-fill-mode: backwards;
+                    animation-fill-mode: backwards;
+        }
+
+        .Logo-img:link,
+        .Logo-img:visited {
+            width: 220px;
+        }
+
+        .Logo-img:hover,
+        .Logo-img:active {
+            width: 30rem;
+        }
+
+/* 900px tablet-portrail = 900px/16px = 56.25em */
+@media only screen and (max-width:56.25em) {
+    .Logo-fadeIn--1,
+    .Logo-fadeIn--2,
+    .Logo-fadeIn--3,
+    .Logo-fadeIn--4 {
+        width: 80%;
+        margin-right: 2.5rem;
+    }
+}

@@ -1,0 +1,42 @@
+.Details-bg {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/parallax/1.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-filter: brightness(130%);
+            filter: brightness(130%);
+
+            display: grid;
+}
+
+    .Details__box {
+        margin: auto;
+        text-align: center;
+    }
+
+        .Details__box h3 {
+            font-size: 4rem;
+            color: #fff;
+        }
+
+        .Details__box h4 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #fff;
+        }
+/* 600px Phone = 600px/16px = 37.5em */
+@media only screen and (max-width:37.5em) {
+    .Details__box h3 {
+        font-size: 2.5rem;
+        color: #fff;
+    }
+
+    .Details__box h4 {
+        font-size: 2rem;
+        font-weight: 300;
+        color: #fff;
+    }
+} 

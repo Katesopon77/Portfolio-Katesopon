@@ -1,0 +1,122 @@
+/* Animation HEADER */
+@-webkit-keyframes SlideInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0rem);
+    }
+}
+@keyframes SlideInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0rem);
+    }
+}
+
+@-webkit-keyframes SlideInUp {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0rem);
+    }
+}
+
+@keyframes SlideInUp {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+    
+    100% {    
+        opacity: 1;
+        transform: translate(0rem);
+    }
+}
+
+/* Animation ABOUT */
+@-webkit-keyframes AboutfadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(15rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0rem);
+    }
+}
+@keyframes AboutfadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(15rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0rem);
+    }
+}
+
+
+/* Animation brand */
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: .3;
+    }
+    80% {
+        opacity: .5;
+    }
+    90% {
+        opacity: .6;
+    }
+    95% {
+        opacity: .8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: .3;
+    }
+    80% {
+        opacity: .5;
+    }
+    90% {
+        opacity: .6;
+    }
+    95% {
+        opacity: .8;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat',sans-serif;
+    color: #3a3a3a;
+    font-weight: 300;
+    min-height: 100vh;
+}
+
+.heading-section {
+    width: 100%;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.heading-secondary--main {
+    font-size: 3.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #3a3a3a;
+}
+
+.heading-secondary--sub {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.heading-secondary--main::after {
+    display: block;
+    height: 1px;
+    background-color: #000;
+    content: "";
+    width: 90px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.arrow-btn{
+    position: fixed;
+    bottom: 3rem;
+    right: 4rem;
+    z-index: 99999;
+}
+
+    .arrow-btn a{
+        height: 4rem;
+        width: 4rem;
+        text-align: center;
+        background: #a5a5a5;
+        display: block;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .arrow-btn a span{
+        font-size: 2.5rem;
+        line-height: 3.9rem;
+        color: #f2f2f2;
+    }
+
+/* 600px Phone = 600px/16px = 37.5em */
+@media only screen and (max-width:37.5em) {
+    /* 1rem = 8px, 8/16 = 50% */
+    html {
+        font-size: 50% !important;   
+    }
+} 
+
+/* 900px tablet-portrail = 900px/16px = 56.25em */
+@media only screen and (max-width:56.25em) {
+    /* 1rem = 8px, 8/16 = 50% */
+    html {
+        font-size: 50% !important;     
+    }
+}
+
+/* 1200px tablet-landscape = 1200px/16px = 75em*/
+@media only screen and (max-width:75em) {
+    /* 1rem = 9px, 9/16 = 56.25% */
+    html {
+        font-size: 56.25% !important;     
+    }
+}
+
+/* 1800px Big Desktop = 1800px/16px = 112.5em */
+@media only screen and (max-width:112.5em) {
+    /* 1rem = 12px, 12/16 = 75% */
+    html {
+        font-size: 75%;     
+    }
+}
